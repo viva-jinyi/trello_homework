@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <Column v-for="task in taskData" :key="task.index" :data="task" />
   </div>
 </template>
@@ -38,6 +38,16 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.main{
+  width: 1280px;
+  max-width: 90vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
 </style>
