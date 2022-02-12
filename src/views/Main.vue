@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <Column v-for="task in taskData" :key="task.index" :data="task" />
+    <Column v-for="task in taskData" :key="task.index" :data="task" :index="task.index" />
   </div>
 </template>
 
